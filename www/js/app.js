@@ -53,6 +53,8 @@ var app = angular.module('starter', ['ionic','ngCordova','chart.js'])
   $scope.hpMode = false;
   $scope.data = [[]]; 
   $scope.labels = [];
+  $scope.timestamps = {};
+  $scope.score = 0;
 
   $scope.onGlanceRequestsUpdate = function() {
     applewatch.loadGlance({
@@ -60,7 +62,7 @@ var app = angular.module('starter', ['ionic','ngCordova','chart.js'])
     })
   }
 
-  window.highPrecisionMode = function(){
+  /*window.highPrecisionMode = function(){
     console.log('sup bruh'); 
     $scope.hpMode = true;
     window.plugins.healthkit.querySampleType({
@@ -74,12 +76,15 @@ var app = angular.module('starter', ['ionic','ngCordova','chart.js'])
          $scope.data[0].push(value.quantity);
          $scope.labels.push(value.startDate);
       });
+
+      $scope.score = Math.pow(10,  1 - (1 /(Math.max.apply(null, $scope.data) - Math.min.apply(null, $scope.data))));
+
       $scope.$digest();
     },
     function(err) {
         console.log(err);
     });
-  }
+  }*/
 
   $scope.onAppRequestsUpdate = function() {
      var payload = {
@@ -170,9 +175,14 @@ var app = angular.module('starter', ['ionic','ngCordova','chart.js'])
       function(v2) {
         console.log('v2',v2);
         angular.forEach(v2, function(value, key){
-           $scope.data[0].push(value.quantity);
-           $scope.labels.push(value.startDate);
+          if(typeof $scope.timestamps[value.startDate] == 'undefined'){
+            $scope.data[0].push(value.quantity);
+            $scope.labels.push(value.startDate);
+            $scope.timestamps[value.startDate] = true;
+          }
+        
         });
+        $scope.score = Math.pow(10,  1 - (3 /(Math.max.apply(null, $scope.data[0]) - Math.min.apply(null, $scope.data[0]))));
         $scope.$digest();
       },
       function(err) {

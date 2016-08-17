@@ -37,7 +37,13 @@
         </div>
 
 
-        <canvas id="line" class="chart chart-line" chart-data="data" chart-labels="labels" chart-series="series" chart-options="options" chart-dataset-override="datasetOverride" chart-click="onClick" ng-show="hpMode"></canvas> 
+        <div id="sexStuff" ng-show="hpMode">
+          <canvas id="line" class="chart chart-line" chart-data="data" chart-labels="labels" chart-series="series" chart-options="options" chart-dataset-override="datasetOverride" chart-click="onClick" ></canvas> 
+          <h1>RYSE score:</h1>
+          <pre>{{score}}</pre>
+        </div>
+        
+
 
         <button class="button button-positive" ng-click="heartRate()">Update readings</button>
        <!-- <button class="button button-positive" ng-click="getHeight()">Get height</button>
