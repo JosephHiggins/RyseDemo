@@ -203,11 +203,17 @@ var app = angular.module('starter', ['ionic','ngCordova','chart.js'])
   document.addEventListener('deviceready', function(){
 
     console.log('device ready');
-    applewatch.init(function(){
-      applewatch.callback.onLoadAppMainRequest = $scope.onAppRequestsUpdate;
-      applewatch.callback.onLoadGlanceRequest = $scope.onGlanceRequestsUpdate;
+    applewatch.init(function(appGroupID){
+      //applewatch.callback.onLoadAppMainRequest = $scope.onAppRequestsUpdate;
+      //applewatch.callback.onLoadGlanceRequest = $scope.onGlanceRequestsUpdate;
+      applewatch.sendMessage('sup', 'coolQueue', function(success){ console.log('yeah');}, function(err){ console.log('nah')});
+      applewatch.addListener("coolQueue", function (message) {
+        // handle your message here
+        console.log('got the thing: '+message);
+      });
+
       console.log('bound our friends');
-    });
+    }, function(e){ console.error(e); }, 'group.com.isodevelopers.ryseDemo');
     console.log('end device ready');
   }, false);
 
