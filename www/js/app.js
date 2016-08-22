@@ -158,37 +158,40 @@ var app = angular.module('starter', ['ionic','ngCordova','chart.js'])
     applewatch.loadAppMain(payload);
 
     
-    window.plugins.healthkit.monitorSampleType({
+    /*window.plugins.healthkit.monitorSampleType({
       sampleType: 'HKQuantityTypeIdentifierHeartRate',
       unit: 'count/min'
-    }, function(v){
+    }, function(v){*/
       $scope.hpMode = true;
-      console.log('got that little wimp');
-      window.plugins.healthkit.querySampleType({
-        startDate: new Date(new Date().getTime() - 1000 * 60),
-        endDate: new Date(), 
-        sampleType: 'HKQuantityTypeIdentifierHeartRate',
-        unit: 'count/min',
-        limit: '1',
-        descending: 'T'
-      },
-      function(v2) {
-        console.log('v2',v2);
-        angular.forEach(v2, function(value, key){
-          if(typeof $scope.timestamps[value.startDate] == 'undefined'){
-            $scope.data[0].push(value.quantity);
-            $scope.labels.push(value.startDate);
-            $scope.timestamps[value.startDate] = true;
-          }
-        
+      setInterval(function(){
+        console.log('got that little wimp');
+        window.plugins.healthkit.querySampleType({
+          startDate: new Date(new Date().getTime() - 1000),
+          endDate: new Date(), 
+          sampleType: 'HKQuantityTypeIdentifierHeartRate',
+          unit: 'count/min',
+          limit: '1',
+          descending: 'T'
+        },
+        function(v2) {
+          console.log('v2',v2);
+          angular.forEach(v2, function(value, key){
+            if(typeof $scope.timestamps[value.startDate] == 'undefined'){
+              $scope.data[0].push(value.quantity);
+              $scope.labels.push(value.startDate);
+              $scope.timestamps[value.startDate] = true;
+            }
+          
+          });
+          $scope.score = Math.pow(10,  1 - (3 /(Math.max.apply(null, $scope.data[0]) - Math.min.apply(null, $scope.data[0]))));
+          $scope.$digest();
+        },
+        function(err) {
+            console.log(err);
         });
-        $scope.score = Math.pow(10,  1 - (3 /(Math.max.apply(null, $scope.data[0]) - Math.min.apply(null, $scope.data[0]))));
-        $scope.$digest();
-      },
-      function(err) {
-          console.log(err);
-      });
-    });
+      },1000);
+      
+   /* }); */ 
 
    // window.hpmId = setInterval(window.highPrecisionMode, 1000);
   }
@@ -213,7 +216,7 @@ var app = angular.module('starter', ['ionic','ngCordova','chart.js'])
       });
 
       console.log('bound our friends');
-    }, function(e){ console.error(e); }, 'group.com.isodevelopers.ryseDemo');
+    }, function(e){ console.error(e); }, 'group.com.isodevelopers.ryse');
     console.log('end device ready');
   }, false);
 
