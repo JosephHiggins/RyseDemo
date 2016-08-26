@@ -1,0 +1,6 @@
+{
+    "HealthKit.framework": 2,
+    "Foundation.framework": 2,
+    "WatchConnectivity.framework": 2,
+    "CoreLocation.framework": 2
+}

@@ -1,0 +1,991 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0207DA571B56EA530066E2B4 /* Images.xcassets */; };
+		0299479DA9D24E3EA4244243 /* AppleWatch.m in Sources */ = {isa = PBXBuildFile; fileRef = B37394454DF64FC7B73397EB /* AppleWatch.m */; };
+		0412585F1A0E43B99C9D5469 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFCE8336E7214D48800B4DB7 /* Foundation.framework */; };
+		110D7800601B40B997991730 /* MMWormholeSessionFileTransiting.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA6538DAB4B4932BC2F2958 /* MMWormholeSessionFileTransiting.m */; };
+		16B191E6B3664FBAACCF8DF1 /* MMWormholeSessionContextTransiting.h in Sources */ = {isa = PBXBuildFile; fileRef = 8FB3E379E3484E4CA3AD2E3E /* MMWormholeSessionContextTransiting.h */; };
+		1B4979210E4F463CA0BC5AAD /* MMWormholeTransiting.h in Sources */ = {isa = PBXBuildFile; fileRef = 2CC8760C49AE426D8AB408AC /* MMWormholeTransiting.h */; };
+		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		288D959130D940FC8466EF21 /* CDVLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 12406F6DF29B47DEB64BECF3 /* CDVLocation.m */; };
+		301BF552109A68D80062928A /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF535109A57CC0062928A /* libCordova.a */; };
+		302D95F114D2391D003F00A1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302D95EF14D2391D003F00A1 /* MainViewController.m */; };
+		302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 302D95F014D2391D003F00A1 /* MainViewController.xib */; };
+		34119D1B57854AB085B1DA92 /* HKHealthStore+AAPLExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA0D36FA31040D298C860B7 /* HKHealthStore+AAPLExtensions.m */; };
+		419EC55CB88243318B0985FA /* MMWormholeSessionMessageTransiting.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7B129B176A445BB30578CE /* MMWormholeSessionMessageTransiting.m */; };
+		466C38A79C2F4D0C9EEF2518 /* MMWormholeFileTransiting.m in Sources */ = {isa = PBXBuildFile; fileRef = 507C368D6340454A81991B10 /* MMWormholeFileTransiting.m */; };
+		4A93104770114B29819A111B /* MMWormholeSession.m in Sources */ = {isa = PBXBuildFile; fileRef = D97932126A324C47977FB320 /* MMWormholeSession.m */; };
+		5EAA2DED74B0411F923CD171 /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C1AA5C7402447B2883B2484 /* WatchConnectivity.framework */; };
+		62EBE73EB7FA4304B7C35E58 /* MMWormholeSessionFileTransiting.h in Sources */ = {isa = PBXBuildFile; fileRef = 54630378DBCD4357A6BC8B36 /* MMWormholeSessionFileTransiting.h */; };
+		7A13C678571F4F96927CE5CF /* CDVCompass.m in Sources */ = {isa = PBXBuildFile; fileRef = C26EA45162664D96980C5E53 /* CDVCompass.m */; };
+		7C129C6B1D660E0C00AE5F5A /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C129C691D660E0C00AE5F5A /* Interface.storyboard */; };
+		7C129C6D1D660E0C00AE5F5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C129C6C1D660E0C00AE5F5A /* Assets.xcassets */; };
+		7C129C741D660E0C00AE5F5A /* ryseDemo Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7C129C731D660E0C00AE5F5A /* ryseDemo Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7C129C7B1D660E0C00AE5F5A /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C129C7A1D660E0C00AE5F5A /* InterfaceController.swift */; };
+		7C129C7D1D660E0C00AE5F5A /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C129C7C1D660E0C00AE5F5A /* ExtensionDelegate.swift */; };
+		7C129C7F1D660E0C00AE5F5A /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C129C7E1D660E0C00AE5F5A /* NotificationController.swift */; };
+		7C129C811D660E0C00AE5F5A /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C129C801D660E0C00AE5F5A /* GlanceController.swift */; };
+		7C129C831D660E0C00AE5F5A /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C129C821D660E0C00AE5F5A /* ComplicationController.swift */; };
+		7C129C851D660E0C00AE5F5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C129C841D660E0C00AE5F5A /* Assets.xcassets */; };
+		7C129C891D660E0C00AE5F5A /* ryseDemo Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 7C129C671D660E0C00AE5F5A /* ryseDemo Watch.app */; };
+		7C724EB61D6B47AF0066FF0A /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C724EB51D6B47AF0066FF0A /* WatchConnectivity.framework */; };
+		7CE4E8C01D6614B3009CDFA1 /* MMWormhole.m in Sources */ = {isa = PBXBuildFile; fileRef = 14EB9721959B494CAC9FB61F /* MMWormhole.m */; };
+		7CE4E8C11D6614C2009CDFA1 /* MMWormholeSession.m in Sources */ = {isa = PBXBuildFile; fileRef = D97932126A324C47977FB320 /* MMWormholeSession.m */; };
+		7CE4E8C21D6614C7009CDFA1 /* MMWormholeSessionContextTransiting.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6B59014DD44A48B00903AC /* MMWormholeSessionContextTransiting.m */; };
+		7CE4E8C31D6614C9009CDFA1 /* MMWormholeSessionFileTransiting.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA6538DAB4B4932BC2F2958 /* MMWormholeSessionFileTransiting.m */; };
+		7CE4E8C41D6614CB009CDFA1 /* MMWormholeSessionMessageTransiting.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7B129B176A445BB30578CE /* MMWormholeSessionMessageTransiting.m */; };
+		7CE4E8C51D6614CE009CDFA1 /* MMWormholeCoordinatedFileTransiting.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E7F0EBC2B864B049FE0AE3C /* MMWormholeCoordinatedFileTransiting.m */; };
+		7CE4E8C61D6614EE009CDFA1 /* MMWormholeFileTransiting.m in Sources */ = {isa = PBXBuildFile; fileRef = 507C368D6340454A81991B10 /* MMWormholeFileTransiting.m */; };
+		7CE4E8C81D661556009CDFA1 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CE4E8C71D661556009CDFA1 /* HealthKit.framework */; };
+		81D625801C734BECB312714F /* WorkoutActivityConversion.m in Sources */ = {isa = PBXBuildFile; fileRef = 339A08D70C274550831EF5D7 /* WorkoutActivityConversion.m */; };
+		9D00BA947B0F4D8E8E776BF4 /* MMWormholeSessionMessageTransiting.h in Sources */ = {isa = PBXBuildFile; fileRef = 99C237534E084AEBB990D670 /* MMWormholeSessionMessageTransiting.h */; };
+		9DDF6FB46F79407AB9AEBEC7 /* MMWormholeSessionContextTransiting.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6B59014DD44A48B00903AC /* MMWormholeSessionContextTransiting.m */; };
+		A494083B8EB94BA7B83B8DD0 /* CDVSplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E61635DE7D4C0D9561269C /* CDVSplashScreen.m */; };
+		A642528DC3D94CE7940572D7 /* IonicKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EA6742A3C5477C9AF54CFD /* IonicKeyboard.m */; };
+		AC7973E967EA4471B231FE12 /* CDVStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 09668359CE024264BF6DC073 /* CDVStatusBar.m */; };
+		AEC13E8B28AF4C0AB3142238 /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = E15121F310BC43F19C9F604E /* CDVDevice.m */; };
+		C2C12C59E2734712A8312A97 /* MMWormholeSession.h in Sources */ = {isa = PBXBuildFile; fileRef = F2876C7867F942C89DE64738 /* MMWormholeSession.h */; };
+		C9781411C5154DACBABBF116 /* CDVViewController+SplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 2082D6203680480195AB613C /* CDVViewController+SplashScreen.m */; };
+		E2468401F45149FEA7EC2BDC /* MMWormhole.m in Sources */ = {isa = PBXBuildFile; fileRef = 14EB9721959B494CAC9FB61F /* MMWormhole.m */; };
+		E60F466B9AB543B58D66C0D5 /* HealthKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 158378E92B874889AC034915 /* HealthKit.m */; };
+		E82445D41A054B7E9CD232CA /* MMWormholeCoordinatedFileTransiting.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E7F0EBC2B864B049FE0AE3C /* MMWormholeCoordinatedFileTransiting.m */; };
+		EE0BA4671A3D4D739898C711 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0051DB781EBB44F8B036CA80 /* HealthKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		F2C3E1A660354D5BA5E2F5C7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A33175701EEA4E47A093D789 /* CoreLocation.framework */; };
+		F7E965DF906047AA884858F4 /* CDVLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 622900EBD6134BACB2FFEC47 /* CDVLogger.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		301BF534109A57CC0062928A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = CordovaLib;
+		};
+		301BF550109A68C00062928A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = CordovaLib;
+		};
+		7C129C751D660E0C00AE5F5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7C129C721D660E0C00AE5F5A;
+			remoteInfo = "ryseDemo Watch Extension";
+		};
+		7C129C871D660E0C00AE5F5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7C129C661D660E0C00AE5F5A;
+			remoteInfo = "ryseDemo Watch";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7C129C8F1D660E0C00AE5F5A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7C129C741D660E0C00AE5F5A /* ryseDemo Watch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C129C911D660E0C00AE5F5A /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				7C129C891D660E0C00AE5F5A /* ryseDemo Watch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0051DB781EBB44F8B036CA80 /* HealthKit.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		0207DA571B56EA530066E2B4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ryseDemo/Images.xcassets; sourceTree = SOURCE_ROOT; };
+		09668359CE024264BF6DC073 /* CDVStatusBar.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVStatusBar.m; path = "cordova-plugin-statusbar/CDVStatusBar.m"; sourceTree = "<group>"; };
+		12406F6DF29B47DEB64BECF3 /* CDVLocation.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVLocation.m; path = "cordova-plugin-geolocation/CDVLocation.m"; sourceTree = "<group>"; };
+		14EB9721959B494CAC9FB61F /* MMWormhole.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = MMWormhole.m; path = "cordova-plugin-apple-watch/MMWormhole.m"; sourceTree = "<group>"; };
+		158378E92B874889AC034915 /* HealthKit.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = HealthKit.m; path = com.telerik.plugins.healthkit/HealthKit.m; sourceTree = "<group>"; };
+		1AB3132BEFF84D8FBF7C90E8 /* CDVDevice.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVDevice.h; path = "cordova-plugin-device/CDVDevice.h"; sourceTree = "<group>"; };
+		1D3623240D0F684500981E51 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* ryseDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ryseDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E7F0EBC2B864B049FE0AE3C /* MMWormholeCoordinatedFileTransiting.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = MMWormholeCoordinatedFileTransiting.m; path = "cordova-plugin-apple-watch/MMWormholeCoordinatedFileTransiting.m"; sourceTree = "<group>"; };
+		2082D6203680480195AB613C /* CDVViewController+SplashScreen.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = "CDVViewController+SplashScreen.m"; path = "cordova-plugin-splashscreen/CDVViewController+SplashScreen.m"; sourceTree = "<group>"; };
+		22E61635DE7D4C0D9561269C /* CDVSplashScreen.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVSplashScreen.m; path = "cordova-plugin-splashscreen/CDVSplashScreen.m"; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29F18D121DE1479BBE741880 /* MMWormholeCoordinatedFileTransiting.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = MMWormholeCoordinatedFileTransiting.h; path = "cordova-plugin-apple-watch/MMWormholeCoordinatedFileTransiting.h"; sourceTree = "<group>"; };
+		2CC8760C49AE426D8AB408AC /* MMWormholeTransiting.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = MMWormholeTransiting.h; path = "cordova-plugin-apple-watch/MMWormholeTransiting.h"; sourceTree = "<group>"; };
+		301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CordovaLib.xcodeproj; path = CordovaLib/CordovaLib.xcodeproj; sourceTree = "<group>"; };
+		301BF56E109A69640062928A /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = SOURCE_ROOT; };
+		302D95EE14D2391D003F00A1 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		302D95EF14D2391D003F00A1 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		302D95F014D2391D003F00A1 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		3047A50F1AB8059700498E2A /* build-debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "build-debug.xcconfig"; path = "cordova/build-debug.xcconfig"; sourceTree = SOURCE_ROOT; };
+		3047A5101AB8059700498E2A /* build-release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "build-release.xcconfig"; path = "cordova/build-release.xcconfig"; sourceTree = SOURCE_ROOT; };
+		3047A5111AB8059700498E2A /* build.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = build.xcconfig; path = cordova/build.xcconfig; sourceTree = SOURCE_ROOT; };
+		32CA4F630368D1EE00C91783 /* ryseDemo-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ryseDemo-Prefix.pch"; sourceTree = "<group>"; };
+		339A08D70C274550831EF5D7 /* WorkoutActivityConversion.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = WorkoutActivityConversion.m; path = com.telerik.plugins.healthkit/WorkoutActivityConversion.m; sourceTree = "<group>"; };
+		35164210F28D45389C443DDA /* CDVViewController+SplashScreen.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = "CDVViewController+SplashScreen.h"; path = "cordova-plugin-splashscreen/CDVViewController+SplashScreen.h"; sourceTree = "<group>"; };
+		3F9438794ACA4A8EAE5658C0 /* CDVLocation.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVLocation.h; path = "cordova-plugin-geolocation/CDVLocation.h"; sourceTree = "<group>"; };
+		4EA6538DAB4B4932BC2F2958 /* MMWormholeSessionFileTransiting.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = MMWormholeSessionFileTransiting.m; path = "cordova-plugin-apple-watch/MMWormholeSessionFileTransiting.m"; sourceTree = "<group>"; };
+		507C368D6340454A81991B10 /* MMWormholeFileTransiting.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = MMWormholeFileTransiting.m; path = "cordova-plugin-apple-watch/MMWormholeFileTransiting.m"; sourceTree = "<group>"; };
+		54630378DBCD4357A6BC8B36 /* MMWormholeSessionFileTransiting.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = MMWormholeSessionFileTransiting.h; path = "cordova-plugin-apple-watch/MMWormholeSessionFileTransiting.h"; sourceTree = "<group>"; };
+		5DA0D36FA31040D298C860B7 /* HKHealthStore+AAPLExtensions.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = "HKHealthStore+AAPLExtensions.m"; path = "com.telerik.plugins.healthkit/HKHealthStore+AAPLExtensions.m"; sourceTree = "<group>"; };
+		622900EBD6134BACB2FFEC47 /* CDVLogger.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVLogger.m; path = "cordova-plugin-console/CDVLogger.m"; sourceTree = "<group>"; };
+		6FB9C763DDE54C95A39E730D /* CDVStatusBar.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVStatusBar.h; path = "cordova-plugin-statusbar/CDVStatusBar.h"; sourceTree = "<group>"; };
+		7C129C671D660E0C00AE5F5A /* ryseDemo Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ryseDemo Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C129C6A1D660E0C00AE5F5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		7C129C6C1D660E0C00AE5F5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7C129C6E1D660E0C00AE5F5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C129C731D660E0C00AE5F5A /* ryseDemo Watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "ryseDemo Watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C129C791D660E0C00AE5F5A /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		7C129C7A1D660E0C00AE5F5A /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		7C129C7C1D660E0C00AE5F5A /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		7C129C7E1D660E0C00AE5F5A /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		7C129C801D660E0C00AE5F5A /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		7C129C821D660E0C00AE5F5A /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		7C129C841D660E0C00AE5F5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7C129C861D660E0C00AE5F5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C129C991D66130200AE5F5A /* ryseDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = ryseDemo.entitlements; path = ryseDemo/ryseDemo.entitlements; sourceTree = "<group>"; };
+		7C129C9A1D66130D00AE5F5A /* ryseDemo Watch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "ryseDemo Watch.entitlements"; sourceTree = "<group>"; };
+		7C129C9B1D66131700AE5F5A /* ryseDemo Watch Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "ryseDemo Watch Extension.entitlements"; sourceTree = "<group>"; };
+		7C724EB51D6B47AF0066FF0A /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS2.2.sdk/System/Library/Frameworks/WatchConnectivity.framework; sourceTree = DEVELOPER_DIR; };
+		7CE4E8C71D661556009CDFA1 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS2.2.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		84EA6742A3C5477C9AF54CFD /* IonicKeyboard.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = IonicKeyboard.m; path = "ionic-plugin-keyboard/IonicKeyboard.m"; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* ryseDemo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "ryseDemo-Info.plist"; path = "ryseDemo/ryseDemo-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = SOURCE_ROOT; };
+		8FB3E379E3484E4CA3AD2E3E /* MMWormholeSessionContextTransiting.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = MMWormholeSessionContextTransiting.h; path = "cordova-plugin-apple-watch/MMWormholeSessionContextTransiting.h"; sourceTree = "<group>"; };
+		99C237534E084AEBB990D670 /* MMWormholeSessionMessageTransiting.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = MMWormholeSessionMessageTransiting.h; path = "cordova-plugin-apple-watch/MMWormholeSessionMessageTransiting.h"; sourceTree = "<group>"; };
+		9A35F0B4F3F547C6A3820BAB /* CDVCompass.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVCompass.h; path = "cordova-plugin-device-orientation/CDVCompass.h"; sourceTree = "<group>"; };
+		9B2EA14E8C3348A4A1F108F3 /* HKHealthStore+AAPLExtensions.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = "HKHealthStore+AAPLExtensions.h"; path = "com.telerik.plugins.healthkit/HKHealthStore+AAPLExtensions.h"; sourceTree = "<group>"; };
+		9C1AA5C7402447B2883B2484 /* WatchConnectivity.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = System/Library/Frameworks/WatchConnectivity.framework; sourceTree = SDKROOT; };
+		9C1ED62B7B7B46A3ABF4600E /* CDVLogger.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVLogger.h; path = "cordova-plugin-console/CDVLogger.h"; sourceTree = "<group>"; };
+		A33175701EEA4E47A093D789 /* CoreLocation.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		B37394454DF64FC7B73397EB /* AppleWatch.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = AppleWatch.m; path = "cordova-plugin-apple-watch/AppleWatch.m"; sourceTree = "<group>"; };
+		BC6B59014DD44A48B00903AC /* MMWormholeSessionContextTransiting.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = MMWormholeSessionContextTransiting.m; path = "cordova-plugin-apple-watch/MMWormholeSessionContextTransiting.m"; sourceTree = "<group>"; };
+		C26EA45162664D96980C5E53 /* CDVCompass.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVCompass.m; path = "cordova-plugin-device-orientation/CDVCompass.m"; sourceTree = "<group>"; };
+		CA88F98AC75542D4A65CFAAB /* IonicKeyboard.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = IonicKeyboard.h; path = "ionic-plugin-keyboard/IonicKeyboard.h"; sourceTree = "<group>"; };
+		CBB062FBAFC9400AA6C549CE /* WorkoutActivityConversion.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = WorkoutActivityConversion.h; path = com.telerik.plugins.healthkit/WorkoutActivityConversion.h; sourceTree = "<group>"; };
+		CDA07BC67C2248EAA2DA7DD0 /* CDVSplashScreen.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVSplashScreen.h; path = "cordova-plugin-splashscreen/CDVSplashScreen.h"; sourceTree = "<group>"; };
+		D7DA79C4942C47A481AB83D5 /* MMWormholeFileTransiting.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = MMWormholeFileTransiting.h; path = "cordova-plugin-apple-watch/MMWormholeFileTransiting.h"; sourceTree = "<group>"; };
+		D97932126A324C47977FB320 /* MMWormholeSession.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = MMWormholeSession.m; path = "cordova-plugin-apple-watch/MMWormholeSession.m"; sourceTree = "<group>"; };
+		DD7B129B176A445BB30578CE /* MMWormholeSessionMessageTransiting.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = MMWormholeSessionMessageTransiting.m; path = "cordova-plugin-apple-watch/MMWormholeSessionMessageTransiting.m"; sourceTree = "<group>"; };
+		E15121F310BC43F19C9F604E /* CDVDevice.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVDevice.m; path = "cordova-plugin-device/CDVDevice.m"; sourceTree = "<group>"; };
+		EB039EA6D4BE4874AB7219EF /* AppleWatch.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = AppleWatch.h; path = "cordova-plugin-apple-watch/AppleWatch.h"; sourceTree = "<group>"; };
+		EB87FDF31871DA8E0020F90C /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../../www; sourceTree = "<group>"; };
+		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
+		ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		EFCE8336E7214D48800B4DB7 /* Foundation.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F2876C7867F942C89DE64738 /* MMWormholeSession.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = MMWormholeSession.h; path = "cordova-plugin-apple-watch/MMWormholeSession.h"; sourceTree = "<group>"; };
+		F2A7EAC834A246EFBBB735E7 /* MMWormhole.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = MMWormhole.h; path = "cordova-plugin-apple-watch/MMWormhole.h"; sourceTree = "<group>"; };
+		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ryseDemo/config.xml; sourceTree = "<group>"; };
+		FDFD534BACA8429DACBEF047 /* HealthKit.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = HealthKit.h; path = com.telerik.plugins.healthkit/HealthKit.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
+				EE0BA4671A3D4D739898C711 /* HealthKit.framework in Frameworks */,
+				0412585F1A0E43B99C9D5469 /* Foundation.framework in Frameworks */,
+				5EAA2DED74B0411F923CD171 /* WatchConnectivity.framework in Frameworks */,
+				F2C3E1A660354D5BA5E2F5C7 /* CoreLocation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C129C701D660E0C00AE5F5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C724EB61D6B47AF0066FF0A /* WatchConnectivity.framework in Frameworks */,
+				7CE4E8C81D661556009CDFA1 /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				302D95EE14D2391D003F00A1 /* MainViewController.h */,
+				302D95EF14D2391D003F00A1 /* MainViewController.m */,
+				302D95F014D2391D003F00A1 /* MainViewController.xib */,
+				1D3623240D0F684500981E51 /* AppDelegate.h */,
+				1D3623250D0F684500981E51 /* AppDelegate.m */,
+			);
+			name = Classes;
+			path = ryseDemo/Classes;
+			sourceTree = SOURCE_ROOT;
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* ryseDemo.app */,
+				7C129C671D660E0C00AE5F5A /* ryseDemo Watch.app */,
+				7C129C731D660E0C00AE5F5A /* ryseDemo Watch Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				7C129C991D66130200AE5F5A /* ryseDemo.entitlements */,
+				EB87FDF41871DAF40020F90C /* config.xml */,
+				EB87FDF31871DA8E0020F90C /* www */,
+				EB87FDF11871DA420020F90C /* Staging */,
+				301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				307C750510C5A3420062BCA9 /* Plugins */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				7C129C681D660E0C00AE5F5A /* ryseDemo Watch */,
+				7C129C771D660E0C00AE5F5A /* ryseDemo Watch Extension */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* ryseDemo-Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+				ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */,
+			);
+			name = "Other Sources";
+			path = ryseDemo;
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0207DA571B56EA530066E2B4 /* Images.xcassets */,
+				3047A50E1AB8057F00498E2A /* config */,
+				8D1107310486CEB800E47090 /* ryseDemo-Info.plist */,
+			);
+			name = Resources;
+			path = ryseDemo/Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7C724EB51D6B47AF0066FF0A /* WatchConnectivity.framework */,
+				7CE4E8C71D661556009CDFA1 /* HealthKit.framework */,
+				0051DB781EBB44F8B036CA80 /* HealthKit.framework */,
+				EFCE8336E7214D48800B4DB7 /* Foundation.framework */,
+				9C1AA5C7402447B2883B2484 /* WatchConnectivity.framework */,
+				A33175701EEA4E47A093D789 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		301BF52E109A57CC0062928A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				301BF535109A57CC0062928A /* libCordova.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3047A50E1AB8057F00498E2A /* config */ = {
+			isa = PBXGroup;
+			children = (
+				3047A50F1AB8059700498E2A /* build-debug.xcconfig */,
+				3047A5101AB8059700498E2A /* build-release.xcconfig */,
+				3047A5111AB8059700498E2A /* build.xcconfig */,
+			);
+			name = config;
+			sourceTree = "<group>";
+		};
+		307C750510C5A3420062BCA9 /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				339A08D70C274550831EF5D7 /* WorkoutActivityConversion.m */,
+				5DA0D36FA31040D298C860B7 /* HKHealthStore+AAPLExtensions.m */,
+				158378E92B874889AC034915 /* HealthKit.m */,
+				CBB062FBAFC9400AA6C549CE /* WorkoutActivityConversion.h */,
+				9B2EA14E8C3348A4A1F108F3 /* HKHealthStore+AAPLExtensions.h */,
+				FDFD534BACA8429DACBEF047 /* HealthKit.h */,
+				B37394454DF64FC7B73397EB /* AppleWatch.m */,
+				14EB9721959B494CAC9FB61F /* MMWormhole.m */,
+				1E7F0EBC2B864B049FE0AE3C /* MMWormholeCoordinatedFileTransiting.m */,
+				507C368D6340454A81991B10 /* MMWormholeFileTransiting.m */,
+				F2876C7867F942C89DE64738 /* MMWormholeSession.h */,
+				D97932126A324C47977FB320 /* MMWormholeSession.m */,
+				8FB3E379E3484E4CA3AD2E3E /* MMWormholeSessionContextTransiting.h */,
+				BC6B59014DD44A48B00903AC /* MMWormholeSessionContextTransiting.m */,
+				54630378DBCD4357A6BC8B36 /* MMWormholeSessionFileTransiting.h */,
+				4EA6538DAB4B4932BC2F2958 /* MMWormholeSessionFileTransiting.m */,
+				99C237534E084AEBB990D670 /* MMWormholeSessionMessageTransiting.h */,
+				DD7B129B176A445BB30578CE /* MMWormholeSessionMessageTransiting.m */,
+				2CC8760C49AE426D8AB408AC /* MMWormholeTransiting.h */,
+				EB039EA6D4BE4874AB7219EF /* AppleWatch.h */,
+				F2A7EAC834A246EFBBB735E7 /* MMWormhole.h */,
+				29F18D121DE1479BBE741880 /* MMWormholeCoordinatedFileTransiting.h */,
+				D7DA79C4942C47A481AB83D5 /* MMWormholeFileTransiting.h */,
+				622900EBD6134BACB2FFEC47 /* CDVLogger.m */,
+				9C1ED62B7B7B46A3ABF4600E /* CDVLogger.h */,
+				E15121F310BC43F19C9F604E /* CDVDevice.m */,
+				1AB3132BEFF84D8FBF7C90E8 /* CDVDevice.h */,
+				C26EA45162664D96980C5E53 /* CDVCompass.m */,
+				9A35F0B4F3F547C6A3820BAB /* CDVCompass.h */,
+				12406F6DF29B47DEB64BECF3 /* CDVLocation.m */,
+				3F9438794ACA4A8EAE5658C0 /* CDVLocation.h */,
+				22E61635DE7D4C0D9561269C /* CDVSplashScreen.m */,
+				2082D6203680480195AB613C /* CDVViewController+SplashScreen.m */,
+				CDA07BC67C2248EAA2DA7DD0 /* CDVSplashScreen.h */,
+				35164210F28D45389C443DDA /* CDVViewController+SplashScreen.h */,
+				09668359CE024264BF6DC073 /* CDVStatusBar.m */,
+				6FB9C763DDE54C95A39E730D /* CDVStatusBar.h */,
+				84EA6742A3C5477C9AF54CFD /* IonicKeyboard.m */,
+				CA88F98AC75542D4A65CFAAB /* IonicKeyboard.h */,
+			);
+			name = Plugins;
+			path = ryseDemo/Plugins;
+			sourceTree = SOURCE_ROOT;
+		};
+		7C129C681D660E0C00AE5F5A /* ryseDemo Watch */ = {
+			isa = PBXGroup;
+			children = (
+				7C129C9A1D66130D00AE5F5A /* ryseDemo Watch.entitlements */,
+				7C129C691D660E0C00AE5F5A /* Interface.storyboard */,
+				7C129C6C1D660E0C00AE5F5A /* Assets.xcassets */,
+				7C129C6E1D660E0C00AE5F5A /* Info.plist */,
+			);
+			path = "ryseDemo Watch";
+			sourceTree = "<group>";
+		};
+		7C129C771D660E0C00AE5F5A /* ryseDemo Watch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				7C129C9B1D66131700AE5F5A /* ryseDemo Watch Extension.entitlements */,
+				7C129C7A1D660E0C00AE5F5A /* InterfaceController.swift */,
+				7C129C7C1D660E0C00AE5F5A /* ExtensionDelegate.swift */,
+				7C129C7E1D660E0C00AE5F5A /* NotificationController.swift */,
+				7C129C801D660E0C00AE5F5A /* GlanceController.swift */,
+				7C129C821D660E0C00AE5F5A /* ComplicationController.swift */,
+				7C129C841D660E0C00AE5F5A /* Assets.xcassets */,
+				7C129C861D660E0C00AE5F5A /* Info.plist */,
+				7C129C781D660E0C00AE5F5A /* Supporting Files */,
+			);
+			path = "ryseDemo Watch Extension";
+			sourceTree = "<group>";
+		};
+		7C129C781D660E0C00AE5F5A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7C129C791D660E0C00AE5F5A /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EB87FDF11871DA420020F90C /* Staging */ = {
+			isa = PBXGroup;
+			children = (
+				F840E1F0165FE0F500CFE078 /* config.xml */,
+				301BF56E109A69640062928A /* www */,
+			);
+			name = Staging;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* ryseDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "ryseDemo" */;
+			buildPhases = (
+				304B58A110DAC018002A0835 /* Copy www directory */,
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+				7C129C911D660E0C00AE5F5A /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				301BF551109A68C00062928A /* PBXTargetDependency */,
+				7C129C881D660E0C00AE5F5A /* PBXTargetDependency */,
+			);
+			name = ryseDemo;
+			productName = ryseDemo;
+			productReference = 1D6058910D05DD3D006BFB54 /* ryseDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7C129C661D660E0C00AE5F5A /* ryseDemo Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C129C901D660E0C00AE5F5A /* Build configuration list for PBXNativeTarget "ryseDemo Watch" */;
+			buildPhases = (
+				7C129C651D660E0C00AE5F5A /* Resources */,
+				7C129C8F1D660E0C00AE5F5A /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7C129C761D660E0C00AE5F5A /* PBXTargetDependency */,
+			);
+			name = "ryseDemo Watch";
+			productName = "ryseDemo Watch";
+			productReference = 7C129C671D660E0C00AE5F5A /* ryseDemo Watch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		7C129C721D660E0C00AE5F5A /* ryseDemo Watch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C129C8E1D660E0C00AE5F5A /* Build configuration list for PBXNativeTarget "ryseDemo Watch Extension" */;
+			buildPhases = (
+				7C129C6F1D660E0C00AE5F5A /* Sources */,
+				7C129C701D660E0C00AE5F5A /* Frameworks */,
+				7C129C711D660E0C00AE5F5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ryseDemo Watch Extension";
+			productName = "ryseDemo Watch Extension";
+			productReference = 7C129C731D660E0C00AE5F5A /* ryseDemo Watch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 730;
+				LastUpgradeCheck = 510;
+				TargetAttributes = {
+					1D6058900D05DD3D006BFB54 = {
+						DevelopmentTeam = A72P88J5Y6;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
+					};
+					7C129C661D660E0C00AE5F5A = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = A72P88J5Y6;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					7C129C721D660E0C00AE5F5A = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = A72P88J5Y6;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "ryseDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 301BF52E109A57CC0062928A /* Products */;
+					ProjectRef = 301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* ryseDemo */,
+				7C129C661D660E0C00AE5F5A /* ryseDemo Watch */,
+				7C129C721D660E0C00AE5F5A /* ryseDemo Watch Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		301BF535109A57CC0062928A /* libCordova.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCordova.a;
+			remoteRef = 301BF534109A57CC0062928A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */,
+				0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C129C651D660E0C00AE5F5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C129C6D1D660E0C00AE5F5A /* Assets.xcassets in Resources */,
+				7C129C6B1D660E0C00AE5F5A /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C129C711D660E0C00AE5F5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C129C851D660E0C00AE5F5A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		304B58A110DAC018002A0835 /* Copy www directory */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy www directory";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "NODEJS_PATH=/usr/local/bin; NVM_NODE_PATH=~/.nvm/versions/node/`nvm version 2>/dev/null`/bin; N_NODE_PATH=`find /usr/local/n/versions/node/* -maxdepth 0 -type d 2>/dev/null | tail -1`/bin; XCODE_NODE_PATH=`xcode-select --print-path`/usr/share/xcs/Node/bin; PATH=$NODEJS_PATH:$NVM_NODE_PATH:$N_NODE_PATH:$XCODE_NODE_PATH:$PATH && node cordova/lib/copy-www-build-step.js";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
+				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
+				81D625801C734BECB312714F /* WorkoutActivityConversion.m in Sources */,
+				34119D1B57854AB085B1DA92 /* HKHealthStore+AAPLExtensions.m in Sources */,
+				E60F466B9AB543B58D66C0D5 /* HealthKit.m in Sources */,
+				0299479DA9D24E3EA4244243 /* AppleWatch.m in Sources */,
+				E2468401F45149FEA7EC2BDC /* MMWormhole.m in Sources */,
+				E82445D41A054B7E9CD232CA /* MMWormholeCoordinatedFileTransiting.m in Sources */,
+				466C38A79C2F4D0C9EEF2518 /* MMWormholeFileTransiting.m in Sources */,
+				C2C12C59E2734712A8312A97 /* MMWormholeSession.h in Sources */,
+				4A93104770114B29819A111B /* MMWormholeSession.m in Sources */,
+				16B191E6B3664FBAACCF8DF1 /* MMWormholeSessionContextTransiting.h in Sources */,
+				9DDF6FB46F79407AB9AEBEC7 /* MMWormholeSessionContextTransiting.m in Sources */,
+				62EBE73EB7FA4304B7C35E58 /* MMWormholeSessionFileTransiting.h in Sources */,
+				110D7800601B40B997991730 /* MMWormholeSessionFileTransiting.m in Sources */,
+				9D00BA947B0F4D8E8E776BF4 /* MMWormholeSessionMessageTransiting.h in Sources */,
+				419EC55CB88243318B0985FA /* MMWormholeSessionMessageTransiting.m in Sources */,
+				1B4979210E4F463CA0BC5AAD /* MMWormholeTransiting.h in Sources */,
+				F7E965DF906047AA884858F4 /* CDVLogger.m in Sources */,
+				AEC13E8B28AF4C0AB3142238 /* CDVDevice.m in Sources */,
+				7A13C678571F4F96927CE5CF /* CDVCompass.m in Sources */,
+				288D959130D940FC8466EF21 /* CDVLocation.m in Sources */,
+				A494083B8EB94BA7B83B8DD0 /* CDVSplashScreen.m in Sources */,
+				C9781411C5154DACBABBF116 /* CDVViewController+SplashScreen.m in Sources */,
+				AC7973E967EA4471B231FE12 /* CDVStatusBar.m in Sources */,
+				A642528DC3D94CE7940572D7 /* IonicKeyboard.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C129C6F1D660E0C00AE5F5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CE4E8C31D6614C9009CDFA1 /* MMWormholeSessionFileTransiting.m in Sources */,
+				7C129C7F1D660E0C00AE5F5A /* NotificationController.swift in Sources */,
+				7C129C7D1D660E0C00AE5F5A /* ExtensionDelegate.swift in Sources */,
+				7CE4E8C21D6614C7009CDFA1 /* MMWormholeSessionContextTransiting.m in Sources */,
+				7CE4E8C01D6614B3009CDFA1 /* MMWormhole.m in Sources */,
+				7C129C831D660E0C00AE5F5A /* ComplicationController.swift in Sources */,
+				7C129C7B1D660E0C00AE5F5A /* InterfaceController.swift in Sources */,
+				7CE4E8C61D6614EE009CDFA1 /* MMWormholeFileTransiting.m in Sources */,
+				7CE4E8C51D6614CE009CDFA1 /* MMWormholeCoordinatedFileTransiting.m in Sources */,
+				7C129C811D660E0C00AE5F5A /* GlanceController.swift in Sources */,
+				7CE4E8C41D6614CB009CDFA1 /* MMWormholeSessionMessageTransiting.m in Sources */,
+				7CE4E8C11D6614C2009CDFA1 /* MMWormholeSession.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		301BF551109A68C00062928A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CordovaLib;
+			targetProxy = 301BF550109A68C00062928A /* PBXContainerItemProxy */;
+		};
+		7C129C761D660E0C00AE5F5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7C129C721D660E0C00AE5F5A /* ryseDemo Watch Extension */;
+			targetProxy = 7C129C751D660E0C00AE5F5A /* PBXContainerItemProxy */;
+		};
+		7C129C881D660E0C00AE5F5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7C129C661D660E0C00AE5F5A /* ryseDemo Watch */;
+			targetProxy = 7C129C871D660E0C00AE5F5A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7C129C691D660E0C00AE5F5A /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7C129C6A1D660E0C00AE5F5A /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3047A50F1AB8059700498E2A /* build-debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = ryseDemo/ryseDemo.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_BITCODE = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ryseDemo/ryseDemo-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				INFOPLIST_FILE = "ryseDemo/ryseDemo-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				PRODUCT_NAME = ryseDemo;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3047A5101AB8059700498E2A /* build-release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = ryseDemo/ryseDemo.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_BITCODE = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ryseDemo/ryseDemo-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				INFOPLIST_FILE = "ryseDemo/ryseDemo-Info.plist";
+				PRODUCT_NAME = ryseDemo;
+			};
+			name = Release;
+		};
+		7C129C8A1D660E0C00AE5F5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_ENTITLEMENTS = "ryseDemo Watch/ryseDemo Watch.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_BITCODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				IBSC_MODULE = ryseDemo_Watch_Extension;
+				INFOPLIST_FILE = "ryseDemo Watch/Info.plist";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.isodevelopers.ryse.watchkit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		7C129C8B1D660E0C00AE5F5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_ENTITLEMENTS = "ryseDemo Watch/ryseDemo Watch.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_BITCODE = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				IBSC_MODULE = ryseDemo_Watch_Extension;
+				INFOPLIST_FILE = "ryseDemo Watch/Info.plist";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.isodevelopers.ryse.watchkit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		7C129C8C1D660E0C00AE5F5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_ENTITLEMENTS = "ryseDemo Watch Extension/ryseDemo Watch Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "ryseDemo Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.isodevelopers.ryse.watchkit.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "/Users/Joseph/ryseDemo/platforms/ios/Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		7C129C8D1D660E0C00AE5F5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_ENTITLEMENTS = "ryseDemo Watch Extension/ryseDemo Watch Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "ryseDemo Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.isodevelopers.ryse.watchkit.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "/Users/Joseph/ryseDemo/platforms/ios/Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3047A5111AB8059700498E2A /* build.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3047A5111AB8059700498E2A /* build.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "ryseDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C129C8E1D660E0C00AE5F5A /* Build configuration list for PBXNativeTarget "ryseDemo Watch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C129C8C1D660E0C00AE5F5A /* Debug */,
+				7C129C8D1D660E0C00AE5F5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C129C901D660E0C00AE5F5A /* Build configuration list for PBXNativeTarget "ryseDemo Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C129C8A1D660E0C00AE5F5A /* Debug */,
+				7C129C8B1D660E0C00AE5F5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "ryseDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
